@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 2-1</title>
+
+</head>
+
+<body>
+    <h1>Wat is uw naam en uw geboortejaar?</h1>
+    <div id="welkom"></div>
+    <div id="leeftijd"></div>
+    <script>
+        // Vraag 1
+        const naam = prompt('Wat is uw naam?', 'naam');
+        const geboortejaar = prompt('Wat is uw geboortejaar', 'jjjj');
+        const tekst = 'Uw naam is ' + naam + ' en uw geboortejaar is ' + geboortejaar;
+
+        // Vraag 2
+        const jaartal = 2023
+        const leeftijd = parseInt(jaartal) - parseInt(geboortejaar);
+        const tekstleeftijd = 'U bent' + ' ' + leeftijd + ' ' + 'jaar oud.';
+
+        document.getElementById('welkom').innerHTML = tekst;
+        document.getElementById("leeftijd").innerHTML = tekstleeftijd;
+
+        // Vraag 3
+        const lengteZin = tekstleeftijd.length;
+        console.log(lengteZin);
+
+        // Vraag 4
+        console.log(tekstleeftijd.indexOf('n'));
+
+        // Vraag 5 boolean 
+        console.log(geboortejaar == 1980);
+    </script>
+</body>
+
+</html>

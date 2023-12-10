@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator</title>
+</head>
+
+<body>
+    <button id="btnVersie" onclick="toonVersie();">Toon browserversie</button>
+    <div id="divResult"></div>
+
+    <script>
+        function toonVersie() {
+            const versie = navigator.appVersion;
+            const tekst = 'U gebruikt versie : ' + versie;
+
+            document.getElementById('divResult').innerHTML = tekst;
+        }
+
+    </script>
+</body>
+
+</html>
