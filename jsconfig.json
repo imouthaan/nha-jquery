@@ -1,5 +1,8 @@
 {
     "compilerOptions": {
-        "types": ["jquery"]
+        "types": ["jquery"],
+        "strict": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true
     }
 }
